@@ -7,7 +7,7 @@ const botao = document.getElementById('btn1')
 botao.addEventListener("click", ()=> {
 let idade = Number(inputIdade.value)
 let senha = inputSenha.value
-resultado.classList.remove("erro", "sucesso")
+resultado.classList.remove("erro", "sucesso") //Limpar a classe antes de Validar. Evita o conflito de estilos. 
 
 if (inputNome.value === "" || inputIdade.value === "" || inputSenha.value === "") { //campos vazios
     resultado.textContent = "Preencha todos os campos!!"
