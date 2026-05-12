@@ -17,6 +17,19 @@ Projeto desenvolvido com o objetivo de praticar conceitos fundamentais de front-
 - Vídeo de fundo dinâmico.
 - Validação com possíveis saídas diferentes.
 
+## 🧪 Regras de validação
+
+O sistema realiza validações básicas nos campos de entrada:
+
+- Nome: obrigatório
+- Idade: deve ser maior ou igual a 18
+- Senha: deve corresponder ao valor pré-definido (`1234`)
+
+### 🔍 Comportamento
+
+- Validação bem-sucedida → exibição de mensagem positiva
+- Validação falha → exibição de mensagens de erro específicas
+
 ## 📱 Responsividade
 
 O projeto foi adaptado para funcionar em dispositivos móveis utilizando `@media queries`.
@@ -41,7 +54,7 @@ Este projeto faz parte do meu processo de aprendizado em desenvolvimento front-e
 
 ## 🖼️ Preview
 
-![Preview do Projeto](./assets/img/preview.png.PNG)
+![Preview do Projeto](./assets/img/preview.png)
 
 ## 🌐 Acesse o projeto
 
