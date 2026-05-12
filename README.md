@@ -1,4 +1,4 @@
-🔐 Sistema de Login Simples
+## 🔐 Sistema de Login Simples
 
 Projeto desenvolvido com o objetivo de praticar conceitos fundamentais de front-end.
 
@@ -8,7 +8,7 @@ Projeto desenvolvido com o objetivo de praticar conceitos fundamentais de front-
 - CSS3
 - JavaScript
 
-🎯 Funcionalidades
+## 🎯 Funcionalidades
 
 - Layout responsivo para diferentes tamanhos de tela.
 - Inputs com feedback visual (focus e hover).
@@ -17,17 +17,17 @@ Projeto desenvolvido com o objetivo de praticar conceitos fundamentais de front-
 - Vídeo de fundo dinâmico.
 - Validação com possíveis saídas diferentes.
 
-📱 Responsividade
+## 📱 Responsividade
 
 O projeto foi adaptado para funcionar em dispositivos móveis utilizando `@media queries`.
 
-🎨 Animações
+## 🎨 Animações
 
 - Transições suaves com `transition`
 - Animações com `@keyframes`
 - Feedback visual com `hover`, `focus` e `active`
 
-📚 Objetivo
+## 📚 Objetivo
 
 Este projeto faz parte do meu processo de aprendizado em desenvolvimento front-end, com foco em:
 
@@ -38,5 +38,13 @@ Este projeto faz parte do meu processo de aprendizado em desenvolvimento front-e
 - Primeira vez usando JavaScript em um projeto.
 
 ---
+
+## 🖼️ Preview
+
+![Preview do Projeto](./assets/img/preview)
+
+## 🌐 Acesse o projeto
+
+👉 https://nathanmatos38.github.io/login-simples/
 
 📚 Projeto desenvolvido para fins de aprendizado e prática de front-end.
