@@ -41,7 +41,7 @@ Este projeto faz parte do meu processo de aprendizado em desenvolvimento front-e
 
 ## 🖼️ Preview
 
-![Preview do Projeto](./assets/img/preview)
+![Preview do Projeto](./assets/img/preview.png)
 
 ## 🌐 Acesse o projeto
 
