@@ -60,4 +60,4 @@ Este projeto faz parte do meu processo de aprendizado em desenvolvimento front-e
 
 👉 https://nathanmatos38.github.io/login-simples/
 
-📚 Projeto desenvolvido para fins de aprendizado e prática de front-end.
+📚 Projeto desenvolvido para fins de aprendizado em JavaScript e prática de front-end.
