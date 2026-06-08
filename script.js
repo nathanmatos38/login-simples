@@ -1,12 +1,25 @@
 const inputNome = document.getElementById('nome')
-let inputIdade = document.getElementById('idade')
-let inputSenha = document.getElementById('senha')
-let resultado = document.getElementById('res')
+const inputIdade = document.getElementById('idade')
+const inputSenha = document.getElementById('senha')
+const resultado = document.getElementById('res')
 const botao = document.getElementById('btn1')
+const mostrarSenha = document.getElementById('mostrarSenha')
+
+mostrarSenha.addEventListener("click", ()=> {
+    if (inputSenha.type === "password") {
+        inputSenha.type = "text"
+        mostrarSenha.textContent = "Ocultar senha"
+        // mostrar senha
+    } else {
+        inputSenha.type = "password"
+        mostrarSenha.textContent = "Mostrar senha"
+        // esconder senha
+    }
+})
 
 botao.addEventListener("click", ()=> {
-let idade = Number(inputIdade.value)
-let senha = inputSenha.value
+const idade = Number(inputIdade.value)
+const senha = inputSenha.value
 resultado.classList.remove("erro", "sucesso") //Limpar a classe antes de Validar. Evita o conflito de estilos. 
 
 if (inputNome.value === "" || inputIdade.value === "" || inputSenha.value === "") { //campos vazios

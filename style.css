@@ -84,7 +84,6 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    animation: zoomVideo 10s infinite alternate;
 }
 
 #btn1 {
@@ -93,7 +92,6 @@ body {
     width: 100px;
     margin-bottom: 5px;
     border-radius: 5px;
-    transition: tranform 0.2s ease, box-shadow 0.2s ease;
     transition: 0.5s;
 }
 
@@ -111,13 +109,30 @@ body {
     transform: scale(0.95);
 }
 
+#mostrarSenha {
+    border-radius: 5px;
+    transition: 0.5s;
+}
+
+#mostrarSenha:hover {
+    background-color: var(--cor6);
+    color: white;
+    border-radius: 10px;
+    transform: scale(1.02);
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.3);
+    cursor: pointer;
+}
+
+#mostrarSenha:active {
+    transform: scale(0.95);
+}
+
 
 input {
     width: 150px;
     border-radius: 5px;
     border: none;
     padding: 2px;
-    transition: all 0.3s ease;
     transition: 0.5s;
 }
 
@@ -165,6 +180,10 @@ p {
 
 #idade {
     width: 154px;
+}
+
+#idade:hover {
+    width: 203px;
 }
 
 
