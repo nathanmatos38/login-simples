@@ -18,22 +18,48 @@ mostrarSenha.addEventListener("click", ()=> {
 })
 
 botao.addEventListener("click", ()=> {
+
+const nome = inputNome.value.trim()
 const idade = Number(inputIdade.value)
 const senha = inputSenha.value
+
 resultado.classList.remove("erro", "sucesso") //Limpar a classe antes de Validar. Evita o conflito de estilos. 
 
-if (inputNome.value === "" || inputIdade.value === "" || inputSenha.value === "") { //campos vazios
+if (nome === "" || inputIdade.value === "" || inputSenha.value === "") { //campos vazios
+
     resultado.textContent = "Preencha todos os campos!!"
     resultado.classList.add("erro")
+
+} else if (nome!== inputNome.value) {
+
+    resultado.textContent = "O nome não pode conter espaços no início ou no final."
+    resultado.classList.add("erro")
+
+} else if (/\d/.test(nome)) {
+
+    resultado.textContent = "O nome não pode conter números."
+    resultado.classList.add("erro")
+
+} else if (idade > 100) {
+
+    resultado.textContent = "Login inválido: A idade máxima aceita é de 100 anos."
+    resultado.classList.add("erro")
+
 } else if (idade < 18) {
+
     resultado.textContent = "Login inválido: Menor de idade."
     resultado.classList.add("erro")
+
 } else if (senha !== "1234") {
+
     resultado.textContent = "Login inválido: Senha incorreta."
     resultado.classList.add("erro")
+
 } else {
+
     resultado.textContent = "Acesso Liberado!"
     resultado.classList.add("sucesso")
+
 }
 })
    
