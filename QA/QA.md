@@ -228,8 +228,8 @@ Durante a exploração e execução dos testes foram identificadas divergências
 
 **Evidências:**
 
-* `evidencias/BUG-001-espaco-nome-inicio.png`
-* `evidencias/BUG-001-espaco-nome-final.png`
+* [Evidência do espaço no início](evidencias/BUG-001-espaco-nome-inicio.png)
+* [Evidência do espaço no final](evidencias/BUG-001-espaco-nome-final.png)
 
 ---
 
@@ -249,7 +249,7 @@ Durante a exploração e execução dos testes foram identificadas divergências
 
 **Evidência:**
 
-`evidencias/BUG-002-numeros-no-nome.png`
+[Evidência dos números no campo Nome](evidencias/BUG-002-numeros-nome.png)
 
 ---
 
@@ -275,8 +275,8 @@ Durante a exploração e execução dos testes foram identificadas divergências
 
 **Evidências:**
 
-* `evidencias/BUG-003-idade-101.png`
-* `evidencias/BUG-003-idade-250.png`
+* [Evidência da idade maior 100](evidencias/BUG-003-idade-101.png)
+* [Evidência da idade 250](evidencias/BUG-003-idade-250.png)
 
 ---
 
@@ -294,11 +294,11 @@ O bug foi reproduzido em duas condições: espaço no início e espaço no final
 
 **Evidência do espaço no início:**
 
-`evidencias/BUG-001-espaco-nome-inicio.png`
+[Evidência do espaço no início](evidencias/BUG-001-espaco-nome-inicio.png)
 
 **Evidência do espaço no final:**
 
-`evidencias/BUG-001-espaco-nome-final.png`
+[Evidência do espaço no final](evidencias/BUG-001-espaco-nome-final.png)
 
 ---
 
@@ -310,7 +310,7 @@ Entretanto, os critérios de aceite estabelecem que o campo Nome não deve aceit
 
 **Evidência do campo Nome com números:**
 
-`evidencias/BUG-002-numeros-no-nome.png`
+[Evidência dos números no campo Nome](evidencias/BUG-002-numeros-nome.png)
 
 ---
 
@@ -322,11 +322,11 @@ O bug foi reproduzido em duas condições: idade `101` e idade `250`.
 
 **Evidência do campo Idade contendo o valor `101`:**
 
-`evidencias/BUG-003-idade-101.png`
+[Evidência da idade maior 100](evidencias/BUG-003-idade-101.png)
 
 **Evidência do campo Idade contendo o valor `250`:**
 
-`evidencias/BUG-003-idade-250.png`
+[Evidência da idade 250](evidencias/BUG-003-idade-250.png)
 
 ---
 
