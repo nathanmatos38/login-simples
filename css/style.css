@@ -156,12 +156,12 @@ a:hover {
 }
 
 .erro {
-    color: red;
+    color: rgb(255, 0, 0);
     font-weight: bold;
 }
 
 .sucesso {
-    color: green;
+    color: rgb(0, 128, 0);
     font-weight: bold;
 }
 
