@@ -2,13 +2,13 @@
 
 Aplicação web desenvolvida com **HTML5, CSS3 e JavaScript**, utilizada como projeto prático para desenvolvimento Front-End e, posteriormente, como base para aplicação de **processos de Qualidade de Software (QA)**.
 
-O projeto passou por um ciclo completo de validação, incluindo **planejamento de testes, definição de regras de validação, elaboração de casos de teste, execução de testes, identificação e documentação de bugs, correções, retestes, testes de regressão e validação da versão publicada**.
+O projeto passou por um ciclo de validação envolvendo **planejamento de testes, definição de regras funcionais, elaboração e execução de casos de teste manuais, identificação e documentação de bugs, correções, retestes, testes de regressão, automação de testes E2E e validação da versão publicada**.
 
 ---
 
 ## 🧪 Qualidade de Software / QA
 
-O projeto foi analisado sob a perspectiva de **QA**, utilizando uma abordagem de **testes manuais**.
+O projeto foi analisado sob duas abordagens complementares: **testes manuais e testes automatizados**.
 
 Durante o processo foram realizados:
 
@@ -22,9 +22,10 @@ Durante o processo foram realizados:
 * 🔄 Retestes;
 * 🔁 Testes de regressão;
 * 🌐 Validação da versão publicada;
-* 📄 Documentação completa do ciclo de testes.
+* 🤖 Automação de testes End-to-End (E2E) com Cypress;
+* 📄 Documentação do processo de QA.
 
-### 📊 Resultado final
+### 📊 Resultado dos testes manuais
 
 | Resultado | Baseline | Versão final |
 | --------- | -------: | -----------: |
@@ -33,11 +34,53 @@ Durante o processo foram realizados:
 | ⚪ BLOCK   |        0 |        **0** |
 | **Total** |   **36** |       **36** |
 
-### 🏆 Resultado da validação
+### 🏆 Resultado da validação manual
 
 **36/36 casos de teste aprovados — 100% PASS**
 
 Todos os cinco casos que apresentaram falha na baseline foram corrigidos, retestados e aprovados na versão final.
+
+---
+
+## 🤖 Automação de Testes — Cypress
+
+Após a conclusão dos testes manuais, foi desenvolvida uma suíte de automação utilizando **Cypress e JavaScript**, com foco na validação dos principais fluxos funcionais da aplicação.
+
+A automação permite executar cenários de forma repetível, verificando comportamentos esperados, mensagens de feedback, interações e funcionamento em diferentes resoluções de tela.
+
+### 🛠️ Tecnologias utilizadas
+
+* Cypress
+* JavaScript
+* Node.js
+* npm
+
+### 🧪 Grupos de testes automatizados
+
+A suíte foi organizada em cinco grupos:
+
+| Grupo                              | Cenários                                                                                 |
+| ---------------------------------- | ---------------------------------------------------------------------------------------- |
+| 1. Logins válidos                  | Autenticação válida, variações de capitalização, nome e sobrenome, idade mínima e máxima |
+| 2. Logins inválidos                | Senha incorreta, campos vazios, caracteres inválidos no nome, espaços e limites de idade |
+| 3. Funcionalidades do botão Entrar | Submissão com dados válidos e inválidos e acionamento repetido                           |
+| 4. Mostrar/Ocultar senha           | Alternância entre os tipos `password` e `text`                                           |
+| 5. Responsividade                  | Execução dos fluxos em diferentes tamanhos de viewport                                   |
+
+### 📱 Viewports utilizados
+
+* `1440 × 842`
+* `1024 × 842`
+* `768 × 842`
+* `425 × 842`
+* `375 × 842`
+* `320 × 842`
+
+### 📊 Resultado da automação
+
+**34 testes automatizados implementados.**
+
+A suíte foi executada com resultado de **34/34 testes aprovados — 100% PASS**, conforme a execução registrada durante o desenvolvimento.
 
 ---
 
@@ -132,7 +175,9 @@ Durante os testes foram avaliados os seguintes viewports:
 * `375 × 842`
 * `320 × 842`
 
-Todos os **6 casos de teste de responsividade foram aprovados** na baseline.
+Todos os **6 casos de teste de responsividade foram aprovados** na validação manual.
+
+A automação também executa os principais fluxos funcionais nesses seis tamanhos de viewport.
 
 ---
 
@@ -159,7 +204,7 @@ Todos os **6 casos de teste de responsividade foram aprovados** na baseline.
 
 A estratégia de testes foi construída a partir da exploração inicial da aplicação e posteriormente estruturada em diferentes grupos de cenários.
 
-A suíte foi organizada em:
+### Testes manuais
 
 1. **Happy Path**
 2. **Variações de Entrada**
@@ -169,25 +214,40 @@ A suíte foi organizada em:
 6. **Botão Entrar**
 7. **Botão Mostrar/Ocultar Senha**
 
-A abordagem permitiu avaliar tanto os comportamentos esperados quanto entradas alternativas, inválidas e casos de borda.
+### Testes automatizados
+
+1. **Logins válidos**
+2. **Logins inválidos**
+3. **Funcionalidades do botão Entrar**
+4. **Mostrar/Ocultar senha**
+5. **Responsividade**
+
+A abordagem combinou exploração manual, validação de regras de negócio e automação de fluxos funcionais, permitindo avaliar comportamentos esperados, entradas alternativas, inválidas e casos de borda.
 
 ---
 
 ## 📈 Evolução da qualidade
 
 ```text
-BASELINE
+TESTES MANUAIS — BASELINE
 31 PASS | 5 FAIL | 0 BLOCK
         │
         ▼
 Correções + Retestes + Regressão
         │
         ▼
-VERSÃO FINAL
+TESTES MANUAIS — VERSÃO FINAL
 36 PASS | 0 FAIL | 0 BLOCK
+        │
+        ▼
+Automação de testes E2E com Cypress
+        │
+        ▼
+AUTOMAÇÃO — EXECUÇÃO REGISTRADA
+33 PASS | 0 FAIL
 ```
 
-**Resultado final:** 100% dos casos de teste aprovados.
+**Resultado:** ciclo de testes manuais concluído e suíte de automação implementada.
 
 ---
 
@@ -207,18 +267,19 @@ VERSÃO FINAL
 
 O projeto teve início como uma prática de desenvolvimento Front-End, com foco em:
 
-* Estruturação de páginas
-* Responsividade
-* Experiência do usuário
-* CSS e animações
-* Primeiros contatos com JavaScript
+* Estruturação de páginas;
+* Responsividade;
+* Experiência do usuário;
+* CSS e animações;
+* Primeiros contatos com JavaScript.
 
-Posteriormente, a aplicação foi utilizada como base para aplicar conhecimentos de **Qualidade de Software**, permitindo praticar um ciclo completo de testes manuais:
+Posteriormente, a aplicação foi utilizada como base para aplicar conhecimentos de **Qualidade de Software**, permitindo praticar um ciclo de testes manuais e automatizados:
 
-`Planejamento` → `Exploração` → `Casos de Teste` → `Baseline` → `Execução` → `Bug Report` → `Correção` → `Reteste` → `Regressão` → `Validação Final`
+`Planejamento` → `Exploração` → `Casos de Teste` → `Baseline` → `Execução Manual` → `Bug Report` → `Correção` → `Reteste` → `Regressão` → `Automação E2E` → `Validação`
 
 ---
 
 ## 👨‍💻 Projeto
 
 Desenvolvido por **Nathan Matos** como projeto prático de aprendizado em Front-End e QA.
+
